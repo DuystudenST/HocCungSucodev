@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duy -- Giải Phương Trình Bậc Hai</title>
+
+    <style>
+        .screen {
+            width: 550px;
+            height: 100px;
+            background: black;
+            color: white;
+            font-weight: bold;
+            font-size: 25px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .caculator {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            /* Khoảng cách giữa các phần tử */
+        }
+
+        .caculator input {
+            width: 550px;
+            border: none;
+            border-bottom: 1px solid black;
+        }
+
+        .caculator input:focus {
+            /* border: none; */
+            outline: none;
+        }
+
+        .caculator button {
+            border: none;
+            border-radius: 10px;
+            background: green;
+            font-weight: bold;
+            color: white;
+            width: 100px;
+            height: 50px;
+            box-sizing: border-box;
+        }
+
+        .caculator button:hover {
+            background-color: rgb(36, 113, 36);
+        }
+
+        .caculator button:active {
+            width: 95px;
+            height: 45px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="color: red;">Giải Phương Trình Bậc 2</h1>
+    <div class="screen">
+        <span>Phương Trình Bậc 2 có dạng: ax^2 + bx + c = 0</span>
+        <br>
+        <span id="error"></span>
+    </div>
+    <br>
+    <div class="caculator">
+        <span>Nhập a: </span>
+        <input type="number" id="numA" placeholder="Vui Lòng Nhập a">
+        <span>Nhập b: </span>
+        <input type="number" id="numB" placeholder="Vui Lòng Nhập b">
+        <span>Nhập c: </span>
+        <input type="number" id="numC" placeholder="Vui Lòng Nhập c">
+        <button id="btn_result" onclick="btnResult()">Tính Ngay</button>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
