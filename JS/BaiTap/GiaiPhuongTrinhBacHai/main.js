@@ -42,15 +42,20 @@ function btnResult() {
                 console.log("X1 = ", x1);
                 const x2 = (-numb - Math.sqrt(detal)) / (2 * numa);
                 console.log("X2 = ", x2);
-                const result = "X1 = " + x1 + "</br> X2 = " + x2;
+                const result = "Phương Trình Có Hai Nghiệm Phân Biệt <br> Detal = " + detal + "<br>" + " X1 = " + x1 + "</br> X2 = " + x2;
                 console.log('kq', result);
                 resultMathSc.innerHTML = result;
             }
-            else if (detal = 0) {
+            else if (detal == 0) {
                 console.log("Phương Trình Có Nghiệm Kép");
+                const x = (-numb)/(2*numa);
+                console.log("x = ",x);
+                const result = "Phương Trình Có Nghiệm Kép. <br> " + x;
+                resultMathSc.innerHTML = result;
             }
             else if (detal < 0) {
                 console.log("Phương Trình Vô Nghiệm");
+                resultMathSc.innerHTML = "Phương Trình Vô Nghiệm";
             }
         }
     }
